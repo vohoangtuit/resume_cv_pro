@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "178034525836",
+    "firebase_url": "https://dualdev-14635.firebaseio.com",
+    "project_id": "dualdev-14635",
+    "storage_bucket": "dualdev-14635.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178034525836:android:3513e94f7599c24af51da9",
+        "android_client_info": {
+          "package_name": "com.dualDev.cvMaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178034525836-cf987gdku7nmf2f4h3p1irkn6poumkn8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dualDev.cvMaker",
+            "certificate_hash": "8882dafe3261ccf6de28db50c1f7644de09eff6e"
+          }
+        },
+        {
+          "client_id": "178034525836-bkdu8l39peugdoe1faiqb3msgru0vtc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCuROJNr6A12Rb2qhUZf74JllPN_Rf5uM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178034525836-bkdu8l39peugdoe1faiqb3msgru0vtc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

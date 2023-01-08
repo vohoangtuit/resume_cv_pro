@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dualDev.cvMaker.EditActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_above="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_title"
+                style="@style/editTextBorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_input_margin_bottom"
+                app:boxCornerRadiusBottomEnd="@dimen/border_edit_text"
+                app:boxCornerRadiusBottomStart="@dimen/border_edit_text"
+                app:boxCornerRadiusTopEnd="@dimen/border_edit_text"
+                app:boxCornerRadiusTopStart="@dimen/border_edit_text"
+                app:boxStrokeColor="@color/primaryLightColor"
+                app:boxStrokeWidth="@dimen/box_border"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <EditText
+                    android:id="@+id/input_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_project_name"
+                    android:inputType="textCapWords"
+                    android:textSize="@dimen/text_size_input" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_detail"
+                style="@style/editTextBorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:layout_marginBottom="@dimen/text_input_margin_bottom"
+                app:boxCornerRadiusBottomEnd="@dimen/border_edit_text"
+                app:boxCornerRadiusBottomStart="@dimen/border_edit_text"
+                app:boxCornerRadiusTopEnd="@dimen/border_edit_text"
+                app:boxCornerRadiusTopStart="@dimen/border_edit_text"
+                app:boxStrokeColor="@color/primaryLightColor"
+                app:boxStrokeWidth="@dimen/box_border"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <EditText
+                    android:id="@+id/input_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_detail"
+                    android:inputType="textCapSentences"
+                    android:textSize="@dimen/text_size_input" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_input_margin_bottom"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/input_subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_subtitle"
+                    android:inputType="text|textCapWords"
+                    android:textSize="@dimen/text_size_input" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_description"
+                style="@style/editTextBorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edit_margin_top"
+                android:layout_marginBottom="@dimen/text_input_margin_bottom"
+                app:boxCornerRadiusBottomEnd="@dimen/border_edit_text"
+                app:boxCornerRadiusBottomStart="@dimen/border_edit_text"
+                app:boxCornerRadiusTopEnd="@dimen/border_edit_text"
+                app:boxCornerRadiusTopStart="@dimen/border_edit_text"
+                app:boxStrokeColor="@color/primaryLightColor"
+                app:boxStrokeWidth="@dimen/box_border"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true">
+
+                <EditText
+                    android:id="@+id/input_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_description"
+                    android:inputType="text|textCapSentences|textMultiLine"
+                    android:textSize="@dimen/text_size_input" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="@string/admob_banner" />
+</RelativeLayout>
